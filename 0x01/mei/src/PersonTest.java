@@ -1,17 +1,18 @@
-import org.junit.Before;
-import org.junit.Test;
+package src;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import java.util.Calendar;
 import java.util.Date;
 
-import static org.junit.Assert.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 public class PersonTest {
 
     private Person person;
 
-    @Before
+    @BeforeEach
     public void setup() {
         Calendar calendar = Calendar.getInstance();
         calendar.set(Calendar.YEAR, 2000);
